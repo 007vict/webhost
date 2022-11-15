@@ -6,6 +6,7 @@ import { Promo } from 'app/components/Promo';
 import { Benefits } from 'app/components/Benefits';
 import { Faq } from 'app/components/Faq';
 import { Contact } from 'app/components/Contact';
+import { Plans } from 'app/components/Plans';
 
 export function HomePage() {
   return (
@@ -13,6 +14,7 @@ export function HomePage() {
       <Header/>
       <Promo />
       <Benefits />
+      <Plans />
       <Faq />
       <Contact />
       <Footer/>

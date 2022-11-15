@@ -13,6 +13,8 @@ interface Props {}
 export const Footer = memo((props: Props) => {
   // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const { t, i18n } = useTranslation();
+  const currentYear = (new Date().getFullYear())
+  const yearTxt = currentYear === 2022 ? "2022" : "2022 - "+currentYear
 
   return (
     <>
@@ -20,9 +22,9 @@ export const Footer = memo((props: Props) => {
       {/*  {t(...messages.someThing())}  */}
       <footer className="u-align-center u-clearfix u-footer u-grey-80 u-footer" id="sec-2260">
         <div className="u-clearfix u-sheet u-sheet-1">
-          <p className="u-small-text u-text u-text-variant u-text-1">Sample text. Click to select the text box. Click
-            again or
-            double click to start editing the text.</p>
+          <p className="u-small-text u-text u-text-variant u-text-1">
+            © { yearTxt } Service - Developed by Company
+          </p>
         </div>
       </footer>
 
