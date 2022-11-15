@@ -21,8 +21,6 @@ export const Faq = memo((props: Props) => {
       <section className="u-align-center u-clearfix u-section-6" id="sec-bc23">
         <div className="u-clearfix u-sheet u-valign-middle-lg u-valign-middle-md u-valign-middle-sm u-valign-middle-xl u-sheet-1">
           <h2 className="u-text u-text-default u-text-1">faq</h2>
-          <p className="u-text u-text-2">Sample text. Click to select the text box. Click again or double click to start
-            editing the text.</p>
           <div className="u-accordion u-expanded-width-xs u-faq u-spacing-20 u-accordion-1">
             <div className="u-accordion-item">
               <a className="active u-accordion-link u-border-1 u-border-active-grey-75 u-border-grey-15 u-border-hover-grey-75 u-border-no-left u-border-no-right u-border-no-top u-button-style u-text-black u-accordion-link-1"
