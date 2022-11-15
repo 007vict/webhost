@@ -10,8 +10,6 @@ import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
-import { GlobalStyle } from 'styles/global-styles';
-
 import { HomePage } from './pages/HomePage/Loadable';
 import { NotFoundPage } from './components/NotFoundPage/Loadable';
 import { useTranslation } from 'react-i18next';
@@ -22,7 +20,7 @@ export function App() {
     <BrowserRouter>
       <Helmet
         titleTemplate="%s - React Boilerplate"
-        defaultTitle="React Boilerplate"
+        defaultTitle="Hosting for your business"
         htmlAttributes={{ lang: i18n.language }}
       >
         <meta name="description" content="A React Boilerplate application" />
@@ -32,7 +30,6 @@ export function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-      <GlobalStyle />
     </BrowserRouter>
   );
 }
