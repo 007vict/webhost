@@ -3,13 +3,14 @@
  * PlanCard
  *
  */
-import React, { memo, ReactFragment } from 'react';
+import React, { ReactFragment } from 'react';
 import styled from 'styled-components/macro';
 import { useTranslation } from 'react-i18next';
 import { messages } from './messages';
 import { selectAllCard } from './slice/index'
 
-
+import { useSelector } from 'react-redux'
+import { select } from './slice/selectors'
 
 interface Props {}
 
@@ -38,13 +39,14 @@ export const PlanCard = ((props: Props) => {
                 <p className="u-text u-text-7">{card.countUser} full user <br/>{card.countEmail} Email Previews <br/>{card.contacts} contacts
                   <br/>{card.coffeeCup} coffee cups<br/>
                 </p>
-                <a href="https://nicepage.com/k/aesthetic-website-templates"
-                   className="u-border-none u-btn u-btn-round u-button-style u-grey-15 u-hover-palette-1-base u-radius-8 u-btn-1"
+                <a href="#sec-99e3"
+                   className="u-btn u-btn-round u-button-style u-dialog-link u-grey-15 u-hover-palette-1-base u-radius-8 u-btn-1"
                    target="_blank">buy now</a>
               </div>
             </div>
         )
       }
+
 
     </>
   );

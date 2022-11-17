@@ -3,7 +3,7 @@
  * Plans
  *
  */
-import React, { memo } from 'react';
+import React from 'react';
 import styled from 'styled-components/macro';
 import { useTranslation } from 'react-i18next';
 import { messages } from './messages';
@@ -17,7 +17,7 @@ export const Plans = ((props: Props) => {
   const { t, i18n } = useTranslation();
 
   return (
-    <Div>
+    <>
       {t('')}
       {/*  {t(...messages.someThing())}  */}
       <section className="u-align-center u-clearfix u-grey-10 u-section-7" id="carousel_3837">
@@ -38,15 +38,13 @@ export const Plans = ((props: Props) => {
                 </div>
 
                 <PlanCard />
-                
+
               </div>
             </div>
           </div>
         </div>
       </section>
-
-
-    </Div>
+    </>
   );
 });
 

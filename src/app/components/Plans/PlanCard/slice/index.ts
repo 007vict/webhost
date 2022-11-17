@@ -29,6 +29,7 @@ export const initialState: CardPlanState = {
     countEmail: "Unlimited",
     contacts: "Unlimited",
     coffeeCup: 100
+
   },
   ]
 };

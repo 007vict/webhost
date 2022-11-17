@@ -6,6 +6,6 @@ import { CardPlanState } from 'app/components/Plans/PlanCard/slice/types';
   You have to declare them here manually
 */
 export interface RootState {
-  cardplan: CardPlanState;
+  cardplan?: CardPlanState;
   // [INSERT NEW REDUCER KEY ABOVE] < Needed for generating containers seamlessly
 }
